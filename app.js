@@ -8,17 +8,17 @@ multi-line comment. */
 
 //Declaring and Assigning Variables Using "Var".
 
-var myName ;
-myName = 10 ;//here a "var" named "myName" is declared and then is assigned value of 10.
+var myName;
+myName = 10; //here a "var" named "myName" is declared and then is assigned value of 10.
 var myVar;
-myVar = myName;//here a "var" named "myVar" is declared and then is assigned value of myName which is 10.
+myVar = myName; //here a "var" named "myVar" is declared and then is assigned value of myName which is 10.
 console.log(myName);
 console.log(myVar);
 
 //XXX---XXX---XXX
 
 //Initialization.
-var myInitialization = 10;//here a "var" named "myInitialization" is declared and then is assigned in the same line with value of 10.
+var myInitialization = 10; //here a "var" named "myInitialization" is declared and then is assigned in the same line with value of 10.
 console.log(myInitialization);
 
 //XXX---XXX---XXX
@@ -36,7 +36,7 @@ console.log(a);
 //XXX---XXX---XXX
 
 //Case Sensitivity = "camelCase".
-var camelCase = "Hello";//Camel Case : First word's every letter will be small , second word's first letter will be capital.
+var camelCase = "Hello"; //Camel Case : First word's every letter will be small , second word's first letter will be capital.
 console.log(camelCase);
 var myHouse = "big";
 console.log(myHouse);
@@ -44,7 +44,7 @@ console.log(myHouse);
 //XXX---XXX---XXX
 
 //Declaring Variables Using "Let".
-let myLet = 15 ;//it throws an error when reassigned.
+let myLet = 15; //it throws an error when reassigned.
 let yourLet = 20;
 console.log(myLet);
 console.log(yourLet);
@@ -53,7 +53,7 @@ console.log(yourLet);
 //XXX---XXX---XXX
 
 ///Declaring Variables Using "Const".
-const myConst = 5 ; //Const Can't Be Reassigned
+const myConst = 5; //Const Can't Be Reassigned
 console.log(myConst);
 //myConst = 10; //Throws an Error in "Const".
 
@@ -138,7 +138,7 @@ console.log(Man);
 //XXX---XXX---XXX
 
 //Single Quotes in "JS".
-let Woman = 'Hello, World!';
+let Woman = "Hello, World!";
 console.log(Woman);
 
 //XXX---XXX---XXX
@@ -167,7 +167,7 @@ console.log(thirdChild);
 
 //Appending Variables to Strings in "JS".
 let fourthChild = "Hello, ";
-let fifthChild = "World !"
+let fifthChild = "World !";
 fourthChild += fifthChild;
 console.log(fourthChild);
 
@@ -175,14 +175,14 @@ console.log(fourthChild);
 
 //Finding the Length of String in "JS".
 let sixthChild = "Hello, World!";
-console.log(sixthChild.length);//here the string "hello world"'s length will be 10 characters.
+console.log(sixthChild.length); //here the string "hello world"'s length will be 10 characters.
 
 //XXX---XXX---XXX
 
 //Bracket Notation in "JS".
 let firstName = "Charles";
 let firstLetter = firstName[0];
-console.log(seventhChild);//In JS counting starts from 0 so 0 targets the first character of the string.
+console.log(seventhChild); //In JS counting starts from 0 so 0 targets the first character of the string.
 
 //XXX---XXX---XXX
 
@@ -220,64 +220,64 @@ console.log(twelfthChild);
 //XXX---XXX---XXX
 
 //Array & Index in "JS".
-let thirteenthChild = ["Hello", "World!", "JS", "is", "fun"]
+let thirteenthChild = ["Hello", "World!", "JS", "is", "fun"];
 console.log(thirteenthChild[0]);
 
 //XXX---XXX---XXX
 
 //Modify Array with Index in "JS".
-let fourteenthChild = ["Hello", "World!", "JS", "is", "fun"]
+let fourteenthChild = ["Hello", "World!", "JS", "is", "fun"];
 fourteenthChild[0] = "Python";
 console.log(fourteenthChild);
 
 //XXX---XXX---XXX
 
 //Push Method in "JS".
-let u = ["Hello", "World!", "JS", "is", "fun"]
+let u = ["Hello", "World!", "JS", "is", "fun"];
 u.push("Python");
-console.log(u);//Push Method : It allows you to push a value at the end of an array & gives you a new length.
+console.log(u); //Push Method : It allows you to push a value at the end of an array & gives you a new length.
 
 //XXX---XXX---XXX
 
 //Pop method in "JS".
-let v = ["Hello", "World!", "JS", "is", "fun"]
-let Popped  = v.pop();//Pop method : it removes the last element of an array and returns it to a new variable.
+let v = ["Hello", "World!", "JS", "is", "fun"];
+let Popped = v.pop(); //Pop method : it removes the last element of an array and returns it to a new variable.
 
 //XXX---XXX---XXX
 
 //Shift method in "JS".
-let w = ["Hello", "World!", "JS", "is", "fun"]
+let w = ["Hello", "World!", "JS", "is", "fun"];
 let Shifted = w.shift();
-console.log(w);//Shift method : it removes the first element of an array and returns it to a new variable.
+console.log(w); //Shift method : it removes the first element of an array and returns it to a new variable.
 
 //XXX---XXX---XXX
 
 //Unshift method in "JS".
-let x = ["Hello", "World!", "JS", "is", "fun"]
+let x = ["Hello", "World!", "JS", "is", "fun"];
 x.unshift("Python");
-console.log(x);//Unshift method : It allows you to push a value at the start of an array & gives you a new length.
+console.log(x); //Unshift method : It allows you to push a value at the start of an array & gives you a new length.
 
 //XXX---XXX---XXX
 
 //Function in "JS".
 function y() {
-    console.log("Hello World");
+  console.log("Hello World");
 }
 
 //XXX---XXX---XXX
 
 //Passing Values to function with Arguments in "JS".
 function z(a, b) {
-    console.log(a + b);
+  console.log(a + b);
 }
 
 //XXX---XXX---XXX
 
 //Return Values to function with Returns in "JS".
 function multiplyFive(num) {
-    return num * 5;
+  return num * 5;
 }
-const answer = multiplyFive(5)
+const answer = multiplyFive(5);
 console.log(answer);
 
 //XXX---XXX---XXX
@@ -285,7 +285,7 @@ console.log(answer);
 //Global Scope in "JS".
 var globalVar = 10;
 function myFunction() {
-    oopsGlobal = globalVar/2;
+  oopsGlobal = globalVar / 2;
 }
 myFunction();
 console.log(oopsGlobal);
@@ -294,10 +294,121 @@ console.log(oopsGlobal);
 
 //Local Scope in "JS".
 function myFunction() {
-    var localVar = 10;
-    console.log(localVar);
+  var localVar = 10;
+  console.log(localVar);
 }
 myFunction();
-console.log(LocalVar)
+console.log(localVar);
 
+//XXX---XXX---XXX
+
+// Global vs Local Scope.
+function myFunction() {
+  var localVar2 = 10;
+  console.log(localVar2);
+}
+
+//XXX---XXX---XXX
+
+//Function with returned value.
+function add(param1, param2) {
+  return param1 + param2;
+}
+add("Car", 10);
+console.log(add);
+
+//XXX---XXX---XXX
+
+//Boolean Values in "JS".
+function boolean() {
+  return true;
+}
+
+console.log(boolean());
+
+//XXX---XXX---XXX
+
+//Boolean Conditional Logic.
+function booleanLogic(logic) {
+  if (logic) {
+    return true;
+  }
+  return false;
+}
+
+console.log(booleanLogic(true));
+
+//XXX---XXX---XXX
+
+//Equality Operator.
+function equalityOperator(equal) {
+  if (equal == 10) {
+    return equal;
+  }
+  return "not equal";
+}
+
+console.log(equalityOperator(10));
+
+//XXX---XXX---XXX
+
+//Strict Equality Operator.
+function strictEquality(strictequal) {
+  if (strictequal === 10) {
+    return equal;
+  }
+  return "not equal";
+}
+
+console.log(strictEquality(10));
+
+//XXX---XXX---XXX
+//Strict inequality operator .
+function strictInequality(strictequal) {
+  if (strictequal !== 10) {
+    return "not equal";
+  }
+  return "equal";
+}
+
+console.log(strictInequality(10));
+
+//XXX---XXX---XXX
+//Greater & Lesser than operator.
+function greaterLesser(num1, num2) {
+  if (num1 > num2) {
+    return "num1 is greater than num2";
+  }
+  return "num2 is greater than num1";
+}
+
+console.log(greaterLesser(10, 20));
+
+//XXX---XXX---XXX
+//Logical & Logical or operator.
+function logicalOperator(logic1, logic2) {
+  if (logic1 && logic2) {
+    return "both logic1 and logic2 are true";
+  }
+  return "either logic1 or logic2 is false";
+}
+
+//XXX---XXX---XXX
+//Else Statement.
+function elseStatement(num) {
+  if (num > 10) {
+    return "num is greater than 10";
+  }
+  return "num is less than or equal to 10";
+}
+
+//XXX---XXX---XXX
+//Else If statement.
+function elseIfStatement(num) {
+  if (num > 10) {
+    return "num is greater than 10";
+  } else if (num === 10) {
+    return "num is equal to 10";
+  }
+}
 //XXX---XXX---XXX
