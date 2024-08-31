@@ -411,4 +411,29 @@ function elseIfStatement(num) {
     return "num is equal to 10";
   }
 }
+
 //XXX---XXX---XXX
+//Switch Statement in "JS".
+function switchStatement(num) {
+  switch (num) {
+    case 1:
+      return "num is equal to 1";
+      case 2:
+        return "num is equal to 2";
+        case 3:
+          return "num is equal to 3";
+          default:
+            return "num is not equal to 1, 2 or 3";
+  }
+}
+
+//XXX---XXX---XXX
+//Boolean Value in Functions in "JS".
+function booleanValue(num) {
+  if (num > 10) {
+    return true;
+  }
+}
+
+//XXX---XXX---XXX
+//
