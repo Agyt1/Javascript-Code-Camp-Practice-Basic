@@ -188,34 +188,104 @@ ageChecker(passToChecker);
 
 //XXX---XXX---XXX
 
+/* Question 1: Array Destructuring with Rest Given the array below, write code to:
+Assign the first two elements to a and b.Collect the remaining elements into a variable rest.
+const numbers = [1, 2, 3, 4, 5]; Expected output: a = 1 b = 2 rest = [3, 4, 5] */
 
+const numbers = [1, 2, 3, 4, 5];
+const [a, b, ...rest] = numbers;
+console.log(a); // 1
+console.log(b); // 2
+console.log(rest); // [3, 4, 5]
 
+//XXX---XXX---XXX
 
+/*Question 2: Object Destructuring with Default Values Given the object, write code to: 
+Extract name and age properties. Provide a default value of "Unknown" for city.
+const person = { name: "Ali", age: 25 }; Expected output: name = "Ali" age = 25 city = "Unknown" */
+const person = { name: "Ali", age: 25 };
+const { name, age, city = "Unknown" } = person;
+console.log(name); // "Ali"
+console.log(age); // 25
+console.log(city); // "Unknown"
 
+//XXX---XXX---XXX
 
+/* Question 3: Nested Destructuring Extract the values street and zip from the nested object:
+const address = {
+  city: "Karachi",
+  details: {
+    street: "Main Road",
+    zip: "74000",
+  },
+}; 
+Expected output: street = "Main Road" zip = "74000" */
 
+const address = {
+  city: "Karachi",
+  details: {
+    street: "Main Road",
+    zip: "74000",
+  },
+};
 
+const {
+  city: {
+    details: { street, zip },
+  },
+} = info;
+console.log(street); // "Main Road"
+console.log(zip); // "74000"
 
+//XXX---XXX---XXX
 
+/* Question 4: Function Parameters with Destructuring and Rest 
+Write a function introduce that takes an object as an argument. The object has the properties name, age, and hobbies.
+Use destructuring to: Extract name and age. Collect all remaining properties into a rest variable.
+const person = { name: "Sara", age: 22, hobbies: ["reading", "cycling"], city: "Lahore" };
+introduce(person);
+Expected output (inside the function): name = "Sara" age = 22 rest = { hobbies: ["reading", "cycling"], city: "Lahore" } */
 
+const person2 = {
+  name: "Sara",
+  age: 22,
+  hobbies: ["reading", "cycling"],
+  city: "Lahore",
+};
 
+function introduce({ name, age, ...rest }) {
+  console.log(name); // "Sara"
+  console.log(age); // 22
+  console.log(rest); // { hobbies: ["reading", "cycling"], city: "Lahore"}
+}
 
+introduce(person2);
 
+//XXX---XXX---XXX
 
+/* Question 5: Destructuring with Default and Rest in Arrays Write code to:
+Extract the first two elements from the array into variables x and y. 
+Use a default value of 0 if the third element is missing. Collect any remaining elements into a rest variable.
+const arr = [10, 20];
+Expected output: x = 10 y = 20 z = 0 rest = [] */
+const arr = [10, 20];
+const [x, y, z = 0, ...rest2] = arr;
+console.log(x); // 10
+console.log(y); // 20
+console.log(z); // 0
+console.log(rest2); //[]
 
+//XXX---XXX---XXX
 
+//White Spacees remover from string in JS.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+const obj = {
+    name: "    Usaid   ",
+    formatter () {
+      if (this.name.includes(" ")) {
+        this.name = this.name.trim();
+        console.log(this.name);
+      }
+    },
+  };
+  obj.formatter();
